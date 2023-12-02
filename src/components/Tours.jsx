@@ -1,12 +1,11 @@
 import React from 'react';
-import './tours.css';
 import Card from './Card';
 
 const Tours = ({ tours, removeTour }) => {
     return (
-        <div>
-            <h1>Plan With Me!!</h1>
-            <div>
+        <div className='container'>
+            <h1 className='title'>Plan With Me!!</h1>
+            <div className='cards'>
                 {
                     tours.map((tour) => {
                         return <Card {...tour} removeTour={removeTour} />
